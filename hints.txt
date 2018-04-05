@@ -1,3 +1,7 @@
+GIT SETUP HINTS by Adnan
+
+
+
 #Enable ssh+git
 
 1. Generate an SSH key
@@ -35,3 +39,8 @@ git+ssh://git@github.com/username/reponame.git
 
 
     Verify that the fingerprint in the message you see matches one of the messages in step 2, then type yes:
+
+# Enable Origin Master as default
+
+
+git branch --set-upstream-to origin/master
