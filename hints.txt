@@ -1,0 +1,37 @@
+#Enable ssh+git
+
+1. Generate an SSH key
+Open terminal to create ssh keys:
+
+cd ~                 #Your home directory
+ssh-keygen -t rsa    #Press enter for all values
+
+2. Associate the SSH key with the remote repository
+
+    If it is a GitHub repository and you have administrative privileges, go to settings and click 'add SSH key'. Copy the contents of your ~/.ssh/id_rsa.pub into the field labeled 'Key'.
+
+3. Set your remote URL to a form that supports SSH 1
+
+If you have done the steps above and are still getting the password prompt, make sure your repo URL is in the form
+
+git+ssh://git@github.com/username/reponame.git
+
+
+4. Testing your SSH connection
+
+    Open Terminal.
+
+    Enter the following:
+
+    ssh -T git@github.com
+
+    # Attempts to ssh to GitHub
+
+    You may see one of these warnings:
+
+    The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+    RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+    Are you sure you want to continue connecting (yes/no)?
+
+
+    Verify that the fingerprint in the message you see matches one of the messages in step 2, then type yes:
