@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
+# Explanation of the shebang
+# #!/usr/bin/env bash #lends you some flexibility on different systems
+# #!/usr/bin/bash     #gives you explicit control on a given system of what executable is called
+
+
+# set -e stops the execution of a script if a command or pipeline has an error - which is the opposite of the default shell behaviour, which is to ignore errors in scripts.
 set e
+
 # Activate the Python environment
 source venv_pycmd/bin/activate
 
