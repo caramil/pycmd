@@ -40,6 +40,10 @@ git+ssh://git@github.com/username/reponame.git
 
     Verify that the fingerprint in the message you see matches one of the messages in step 2, then type yes:
 
+5. Add account level key
+
+
+
 # Enable Origin Master as default
 
 
