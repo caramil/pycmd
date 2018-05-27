@@ -20,6 +20,10 @@ If you have done the steps above and are still getting the password prompt, make
 
 git+ssh://git@github.com/username/reponame.git
 
+Push default to Master:
+
+ git push --set-upstream origin master
+
 
 4. Testing your SSH connection
 
