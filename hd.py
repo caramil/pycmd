@@ -39,7 +39,7 @@ def test_visualizer_report_tab_navigate_select_asset():
             browser.find_element_by_xpath("/html/body/app-root/div[1]/app-reports/div/div[1]/div/div[1]/span/span[2]").click()
             #Select asset type
             select_asset_text = browser.find_element_by_xpath("/html/body/app-root/div[1]/app-reports/div/div[2]/div[1]/div[2]/generic-report/div/div/label").text
-            assert select_asset_text == "Select asset type"
+            assert select_asset_text == "1Select asset type"
             browser.close()
             return
         except (AssertionError, WebDriverException) as e:
