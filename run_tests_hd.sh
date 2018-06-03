@@ -4,6 +4,6 @@ set e
 
 source venv_pycmd/bin/activate
 
-py.test hd.py  --junit-xml=test-results.xml
+py.test visualizer_login.py --junit-xml=test-results.xml
 
 deactivate
