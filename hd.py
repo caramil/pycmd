@@ -22,7 +22,7 @@ def test_visualizer_login():
     browser.find_element_by_xpath("/html/body/app-root/div[1]/app-geps-login/div/div[3]/div[2]/div/div[2]/form/div[1]/input").send_keys("muhammad.adnan@hd-wireless.se")
     browser.find_element_by_xpath("/html/body/app-root/div[1]/app-geps-login/div/div[3]/div[2]/div/div[2]/form/div[2]/input")
     browser.find_element_by_xpath("/html/body/app-root/div[1]/app-geps-login/div/div[3]/div[2]/div/div[2]/form/div[2]/input").clear()
-    browser.find_element_by_xpath("/html/body/app-root/div[1]/app-geps-login/div/div[3]/div[2]/div/div[2]/form/div[2]/input").send_keys("")
+    browser.find_element_by_xpath("/html/body/app-root/div[1]/app-geps-login/div/div[3]/div[2]/div/div[2]/form/div[2]/input").send_keys("#Lahore3")
     browser.find_element_by_xpath("/html/body/app-root/div[1]/app-geps-login/div/div[3]/div[2]/div/div[2]/form/button[2]").click()
     time.sleep(2)
     print(browser.current_url)
