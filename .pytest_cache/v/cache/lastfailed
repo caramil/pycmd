@@ -1,3 +1,4 @@
 {
-  "hd.py::test_report_tab_navigate_select_asset": true
+  "hd.py::test_report_tab_navigate_select_asset": true, 
+  "visualizer_asset_navigate.py::test_visualizer_report_tab_navigate_select_asset": true
 }
